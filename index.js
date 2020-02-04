@@ -50,7 +50,6 @@ module.exports = function (homebridge) {
           })
         })
     })
-
   }
 
   class VivintPlatform {
@@ -60,7 +59,7 @@ module.exports = function (homebridge) {
       this.api = api
 
       let VivintApi = VivintApiModule(config, log)
-      this.vivintApiPromise = VivintApi.login({username: config.username, password: config.password}, 1)
+      this.vivintApiPromise = VivintApi.login({username: config.username, password: config.password})
       let apiLoginRefreshSecs = config.apiLoginRefreshSecs || 1200 // once per 20 minutes default
 
 
@@ -130,5 +129,5 @@ module.exports = function (homebridge) {
     }
   }
 
-  homebridge.registerPlatform(PluginName, PlatformName, VivintPlatform)
+  homebridge.registerPlatform(PluginName, PlatformName, VivintPlatform);
 };
