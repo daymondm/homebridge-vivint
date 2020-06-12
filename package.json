@@ -1,6 +1,6 @@
 {
   "name": "homebridge-vivint",
-  "version": "0.0.6",
+  "version": "0.0.5",
   "description": "Control Vivint with HomeBridge",
   "license": "ISC",
   "author": "Tim Harper <timcharper@gmail.com>",
@@ -9,10 +9,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/michaelmade/homebridge-vivint-latest.git"
+    "url": "git://github.com/timcharper/homebridge-vivint.git"
   },
   "bugs": {
-    "url": "http://github.com/michaelmade/homebridge-vivint-latest/issues"
+    "url": "http://github.com/timcharper/homebridge-vivint/issues"
   },
   "engines": {
     "node": ">=0.12.0",
