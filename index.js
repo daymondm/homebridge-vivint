@@ -1,6 +1,6 @@
 var Accessory, Service, Characteristic, UUIDGen;
 
-const PluginName = "homebridge-vivint"
+const PluginName = "homebridge-vivint-latest"
 const PlatformName = "Vivint"
 const VivintApiModule = require("./lib/vivint_api.js")
 const DeviceSetModule = require("./lib/device_set.js")
@@ -125,7 +125,7 @@ module.exports = function (homebridge) {
     }
 
     configureAccessory(accessory) {
-      console.log("received cached accessory", accessory)
+      //console.log("received cached accessory", accessory)
       this.cachedAccessories.append(accessory)
     }
   }
