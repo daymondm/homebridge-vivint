@@ -1,31 +1,56 @@
 {
-  "name": "homebridge-vivint",
-  "version": "0.0.4",
+  "name": "@balansse/homebridge-vivint",
+  "version": "1.5.3",
   "description": "Control Vivint with HomeBridge",
   "license": "ISC",
-  "author": "Tim Harper <timcharper@gmail.com>",
+  "author": "Alexandr Balan <balansse@gmail.com>",
+  "contributors": [
+    "Tim Harper <timcharper@gmail.com>"
+  ],
   "keywords": [
     "homebridge-plugin"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/timcharper/homebridge-vivint.git"
+    "url": "git://github.com/balansse/homebridge-vivint.git"
   },
   "bugs": {
-    "url": "http://github.com/timcharper/homebridge-vivint/issues"
+    "url": "http://github.com/balansse/homebridge-vivint/issues"
   },
   "engines": {
-    "node": ">=0.12.0",
-    "homebridge": ">=0.2.0"
+    "node": ">=10",
+    "homebridge": ">=1.0.0"
   },
   "dependencies": {
-    "debounce-promise": "^3.1.0",
+    "debounce-promise": "^3.1.2",
+    "ffmpeg-for-homebridge": "^0.0.9",
+    "get-port": "^5.1.1",
     "isobject": "^3.0.1",
-    "pubnub": "^4.21.2",
-    "request": "^2.87.0",
-    "request-promise-native": "^1.0.5"
+    "jpeg-extract": "^3.0.1",
+    "pubnub": "^4.29.11",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
   },
   "devDependencies": {
     "mocha": "^5.2.0"
+  },
+  "homepage": "https://github.com/balansse/homebridge-vivint#readme",
+  "funding": [
+    {
+      "type": "kofi",
+      "url": "https://ko-fi.com/balansse"
+    },
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/balansse"
+    }
+  ],
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
